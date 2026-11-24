@@ -36,7 +36,6 @@ for line in fileinput.input():
 
 tcols = 0
 n = 1
-life = 10_000
 life = 1000000000000
 seen = set()
 last_seen = 0
@@ -62,7 +61,6 @@ while True:
             nch = ch
 
         if col < life:
-            # if col < 1_000_000_000_000:
             NG.append((nr, nc, nch, col))
             OCC[(nr, nc)] += 1
         else:
